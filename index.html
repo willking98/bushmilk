@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+  <title>BushMilk</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: #f8fafc;
+      color: #333;
+    }
+
+    header {
+      background: #005e2e;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+      position: relative;
+    }
+
+    .logo {
+      max-width: 120px;
+      margin: 0 auto 1rem;
+      display: block;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0.5rem 0;
+    }
+
+    nav {
+      margin-top: 1rem;
+    }
+
+    nav a {
+      color: #cdecd1;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: white;
+    }
+
+    section {
+      padding: 3rem 1.5rem;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #005e2e;
+    }
+
+    #product-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    #product-list li {
+      background: white;
+      margin-bottom: 0.75rem;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+
+    form {
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 0.75rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-family: inherit;
+    }
+
+    form button {
+      background: #005e2e;
+      color: white;
+      border: none;
+      padding: 0.75rem 2rem;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    form button:hover {
+      background: #007c3f;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: #e0e0e0;
+      font-size: 0.9rem;
+      color: #555;
+    }
+    .faq-container details {
+      margin-bottom: 1rem;
+      background: #fff;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      cursor: pointer;
+    }
+
+    .faq-container summary {
+      font-weight: 600;
+      font-size: 1.1rem;
+      color: #005e2e;
+      outline: none;
+    }
+
+    .faq-container p {
+      margin: 0.5rem 0 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="assets/images/bushmilk-logo.png" alt="Bushmilk Logo" class="logo"/>
+    <h1>BushMilk</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#products">Products</a>
+      <a href="#findus">Find us</a>
+      <a href="#FAQ">FAQ</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Welcome to <strong>BushMilk</strong> — a local dairy farm based in Bushmills, offering ultra-fresh milk through our innovative milk vending machine. We're passionate about sustainability, animal welfare, and providing our community with high-quality, farm-fresh dairy.</p>
+
+    <h3>Follow Us on Instagram</h3>
+    <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 2rem;">
+      <blockquote class="instagram-media"
+        data-instgrm-permalink="https://www.instagram.com/p/BnN0McRBM0_/?utm_source=ig_embed"
+        data-instgrm-version="14"
+        style="background:#FFF; border:0; border-radius:3px; max-width:270px; width:100%;">
+      </blockquote>
+
+      <blockquote class="instagram-media"
+        data-instgrm-permalink="https://www.instagram.com/p/BjhBmwGhZdr/?utm_source=ig_embed"
+        data-instgrm-version="14"
+        style="background:#FFF; border:0; border-radius:3px; max-width:270px; width:100%;">
+      </blockquote>
+    </div>
+
+<script async src="//www.instagram.com/embed.js"></script>
+  </section>
+
+
+  <section id="products">
+    <h2>Our Products</h2>
+    <ul id="product-list"></ul>
+  </section>
+
+  <section id="location">
+    <h2>Where to Find Us</h2>
+    <p>Come visit our milk vending machine in Bushmills:</p>
+    <div style="overflow:hidden; border-radius:10px; margin-top:1rem;">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2287.541780809396!2d-6.5203418!3d55.2034736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48604f73ef9246b1%3A0x7f2767e470f7d38e!2s2%20Distillery%20Rd%2C%20Bushmills%20BT57%208XH%2C%20UK!5e0!3m2!1sen!2suk!4v1715601000000!5m2!1sen!2suk"
+        width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </section>
+
+  <section id="FAQ">
+    <h2>Frequently Asked Questions</h2>
+  <div class="faq-container" style="margin-top: 2rem;">
+    <details>
+      <summary>Are you organic?</summary>
+      <p>We follow many organic practices, but we are not currently certified organic. Our cows are grass-fed and we avoid unnecessary antibiotics or chemicals.</p>
+    </details>
+
+    <details>
+      <summary>Are your cows free-range?</summary>
+      <p>Yes! Our cows graze outdoors in open fields for most of the year and are only brought indoors during extreme weather.</p>
+    </details>
+
+    <details>
+      <summary>Is your milk pasteurized?</summary>
+      <p>Yes. All milk from our vending machine is gently pasteurized on-site to ensure safety and freshness while preserving natural flavour.</p>
+    </details>
+
+    <details>
+      <summary>Do you use glass bottles?</summary>
+      <p>We offer reusable glass bottles, which you can purchase and refill from our vending machine. It's part of our commitment to sustainability.</p>
+    </details>
+
+    <details>
+      <summary>Where can I find your milk vending machine?</summary>
+      <p>Right beside our farm entrance on Distillery Road, Bushmills. See the <a href="#location">map</a> above for directions.</p>
+    </details>
+  </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form id="contact-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 BushMilk | Produced with care in Bushmills
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
