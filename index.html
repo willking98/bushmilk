@@ -13,23 +13,24 @@
     }
 
 :root {
-  --primary: #4B6043;
-  --accent: #A3B18A;
-  --light: #FFF9F0;
-  --background: #F5F5F5;
-  --text: #2E2E2E;
+  --primary: #2F3E46;
+  --accent: #84A98C;
+  --light-bg: #F0F4EF;
+  --hover: #CAD2C5;
+  --text: #1C1C1C;
+  --white: #FFFFFF;
 }
 
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
-  background: var(--background);
+  background: var(--light-bg);
   color: var(--text);
 }
 
 header {
   background: var(--primary);
-  color: white;
+  color: var(--white);
   text-align: center;
   padding: 2.5rem 1rem;
   border-bottom: 4px solid var(--accent);
@@ -46,55 +47,56 @@ header {
 }
 
 header h1 {
-  font-size: 2.75rem;
+  font-size: 2.5rem;
   font-weight: 700;
   margin: 0.5rem 0;
 }
 
 nav {
-  margin-top: 1.5rem;
+  margin-top: 1rem;
 }
 nav a {
-  color: var(--light);
+  color: var(--accent);
   text-decoration: none;
-  margin: 0 1.2rem;
+  margin: 0 1rem;
   font-weight: 600;
   transition: color 0.3s ease;
 }
 nav a:hover {
-  color: white;
+  color: var(--white);
 }
 
 section {
   padding: 4rem 1.5rem;
   max-width: 860px;
   margin: auto;
-  background: white;
+  background: var(--white);
   border-radius: 12px;
   margin-top: 2rem;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
 }
 
 section h2 {
-  font-size: 2.25rem;
+  font-size: 2.2rem;
   color: var(--primary);
   margin-bottom: 1.25rem;
 }
 
 #product-list li {
-  background: var(--light);
+  background: var(--light-bg);
   margin-bottom: 1rem;
   padding: 1.25rem;
   border-radius: 10px;
   box-shadow: 0 3px 10px rgba(0,0,0,0.04);
-  transition: transform 0.2s ease;
+  transition: background 0.2s ease, transform 0.2s ease;
 }
 #product-list li:hover {
-  transform: translateY(-4px);
+  background: var(--hover);
+  transform: translateY(-3px);
 }
 
 form {
-  background: var(--light);
+  background: var(--white);
   padding: 2rem;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.05);
@@ -123,7 +125,7 @@ form button:hover {
 
 .faq-container details {
   margin-bottom: 1rem;
-  background: #fff;
+  background: var(--white);
   padding: 1rem;
   border-radius: 10px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.03);
