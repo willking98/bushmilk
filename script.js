@@ -3,7 +3,7 @@ document.getElementById('contact-form').addEventListener('submit', function (e) 
   alert('Thank you for contacting us!');
 });
 
-const products = ['Fresh Whole Milk', 'Semi-Skimmed Milk', 'Reusable Glass Bottles'];
+const products = ['BushMilk (Fresh Whole Milk)', 'BushMilk (Semi-Skimmed Milk)', 'Reusable Glass Bottles'];
 
 const list = document.getElementById('product-list');
 products.forEach(product => {
